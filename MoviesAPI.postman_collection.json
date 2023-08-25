@@ -1,0 +1,139 @@
+{
+	"info": {
+		"_postman_id": "3cd31c4f-601d-4526-9859-9ee0130daf02",
+		"name": "MoviesAPI",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "29194717"
+	},
+	"item": [
+		{
+			"name": "Get_All_Movies",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:7248/swagger/index.html",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7248",
+					"path": [
+						"swagger",
+						"index.html"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"Title\": \"WALL-E\",\r\n    \"RunningTime\": 86,\r\n    \"Genre\": \"Animation\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:7248/api/Movies",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7248",
+					"path": [
+						"api",
+						"Movies"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Movies",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"Title\": \"Cars\",\r\n    \"RunningTime\": 06,\r\n    \"Genre\": \"Animation\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:7248/api/Movies/{id}",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7248",
+					"path": [
+						"api",
+						"Movies",
+						"{id}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Movies",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:7248/api/Movies",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7248",
+					"path": [
+						"api",
+						"Movies"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Movies",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:7248/api/Movies/",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7248",
+					"path": [
+						"api",
+						"Movies",
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
